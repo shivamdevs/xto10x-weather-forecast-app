@@ -9,7 +9,7 @@ function App() {
         <ContextWrapper>
             <Header />
             <div className="w-full">
-                <main className="w-full max-w-7xl mx-auto">
+                <main className="w-full max-w-7xl mx-auto p-5">
                     <TopPanel />
                     <ForeCast />
                 </main>
