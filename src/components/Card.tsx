@@ -12,7 +12,7 @@ export interface CardProps {
 }
 function Card({ prefix, header, layout, temp_high, temp_low, humidity, sunrise, sunset }: CardProps) {
     return (
-        <div className="flex flex-col justify-end flex-1 flex-shrink-0 basis-60">
+        <div className="flex flex-col justify-end flex-1 flex-shrink-0 basis-44 md:basis-60">
             <div className="text-center mb-3 text-lg font-semibold text-gray-600">{prefix}</div>
             <div className={
                 "flex flex-col justify-end "

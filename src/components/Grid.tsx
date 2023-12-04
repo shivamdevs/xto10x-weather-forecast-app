@@ -7,7 +7,7 @@ export interface GridProps {
 function Grid({ children }: GridProps) {
     return (
         <div className="w-full overflow-auto p-5 [&::-webkit-scroll]:hidden">
-            <div className="flex flex-nowrap min-w-full gap-5">{children}</div>
+            <div className="flex flex-nowrap min-w-full gap-2 md:gap-5">{children}</div>
         </div>
     )
 }

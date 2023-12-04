@@ -17,6 +17,7 @@ function Search() {
                 id="search"
                 className="bg-transparent flex-1 pl-3 outline-none rounded-l"
                 value={query}
+                autoComplete="off"
                 onChange={({ target }) => setQuery(target.value)}
                 onFocus={() => setFocus(true)}
                 onBlur={() => setFocus(false)}
@@ -25,7 +26,7 @@ function Search() {
             <label htmlFor="search" className="w-12 h-12 inline-flex justify-center items-center">
                 <SearchIcon />
             </label>
-            {(focus || query) && <div className="absolute top-full mt-3 bg-white shadow-lg left-0 right-0 rounded-md z-10 overflow-hidden [&>span]:w-full [&>span]:inline-block [&>span]:my-5 [&>span]:text-center">
+            {(focus || query) && <div className="absolute top-full mt-3 bg-white shadow-lg left-0 right-0 rounded-md z-20 overflow-hidden [&>span]:w-full [&>span]:inline-block [&>span]:my-5 [&>span]:text-center">
                 {loading
                     ? <span className=""><l-ring size="40" stroke="4" bg-opacity="0" speed="2" color="#2a52be" /></span>
                     : result === null
